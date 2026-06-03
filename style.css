@@ -1,0 +1,94 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #c5a059;
+    --bg: #f4f7f6;
+    --white: #ffffff;
+    --text: #333;
+    --danger: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: var(--primary);
+    font-weight: 300;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: var(--primary);
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #fafafa;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn, button {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover, button:hover {
+    background-color: var(--accent);
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 5px 10px;
+}
+
+.btn-delete:hover {
+    background-color: var(--danger);
+    color: white;
+}
