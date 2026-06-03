@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'MuseumDB';
 $user = 'museumuser';
-$pass = 'museum123';
+$pass = 'YOUR_PASSWORD_HERE';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
