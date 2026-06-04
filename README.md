@@ -14,4 +14,4 @@ A full-stack web application developed for managing museum exhibit records.
 * **Frontend:** HTML5, CSS3
 
 ## Live Demo
-[View the live project here](https://davidmuseum.free.nf/)
+[View the live project here](https://davidmuseum.free.nf/) Login Credentials: admin - museum2026
