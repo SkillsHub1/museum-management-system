@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
 require_once 'db.php';
 
 if (isset($_POST['delete_id'])) {
@@ -24,7 +30,7 @@ $exhibits = $stmt->fetchAll();
         <div style="margin-bottom: 20px;">
             <a href="add.php" class="btn">Add New Exhibit</a> 
             <span style="margin: 0 10px; color: #ccc;">|</span>
-            <a href="index.php" style="color: #7f8c8d; font-weight: normal;">Logout</a>
+            <a href="logout.php" style="color: #7f8c8d; font-weight: normal;">Logout</a>
         </div>
 
         <table>
