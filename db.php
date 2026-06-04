@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$db   = 'MuseumDB';
-$user = 'museumuser';
-$pass = 'YOUR_PASSWORD_HERE';
+$host = 'sql300.infinityfree.com';
+$db   = 'if0_42091656_museumdb';
+$user = 'if0_42091656';
+$pass = 'dadokorunce123';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
